@@ -41,3 +41,25 @@ This project classifies ECG images into 4 heart conditions using Deep Learning (
 5. Train Model
 6. Evaluate Model
 7. Prediction
+
+## An Overview of Electrocardiogram (ECG or EKG)
+
+An electrocardiogram records the electrical signals in the heart. It is a common and painless test used to detect heart problems and monitor the heart's health quickly.
+
+It is used to determine or detect:
+- Irregular heart rhythms (arrhythmias)
+- Blocked or narrowed arteries causing chest pain or heart attack
+- Whether you have had a previous heart attack
+- How well certain heart disease treatments are working
+
+## Identifying Heart Disease from ECG Images with Deep Learning
+
+This project uses a dataset of annotated ECG images and their corresponding heart disease labels to train a CNN (MobileNetV2) model to identify different heart conditions based on the input ECG image.
+
+## Data Preprocessing
+
+The original images were resized to 224x224 to make deep learning processing efficient. Images were normalized and augmented using rotation, zoom, and horizontal flip to improve model performance.
+
+## CNN Architecture (MobileNetV2)
+
+MobileNetV2 is a lightweight deep learning model pre-trained on ImageNet. It uses depthwise separable convolutions for efficient feature extraction. The model was fine-tuned on our ECG dataset for 4-class classification.
