@@ -64,4 +64,18 @@ The original images were resized to 224x224 to make deep learning processing eff
 ## CNN Architecture (MobileNetV2)
 <img src="mobilenet.png" width="600"/>
 
-MobileNetV2 is a lightweight deep learning model pre-trained on ImageNet. It uses depthwise separable convolutions for efficient feature extraction. The model was fine-tuned on our ECG dataset for 4-class classification.
+A lightweight convolutional neural network (CNN) architecture, MobileNetV2, is specifically designed for mobile and embedded vision applications. Google researchers developed it as an enhancement over the original MobileNet model. Another remarkable aspect of this model is its ability to strike a good balance between model size and accuracy, rendering it ideal for resource-constrained devices. And a deep learning model pre-trained on ImageNet. It uses depthwise separable convolutions for efficient feature extraction. The model was fine-tuned on our ECG dataset for 4-class classification.
+The key innovation in MobileNetV2 is the use of inverted residual blocks 
+with linear bottlenecks. Unlike traditional CNNs, it first expands the 
+feature channels, applies depthwise convolution, then compresses back — 
+This reduces computation while preserving accuracy.
+
+For our ECG heart disease classification project, we used Transfer Learning 
+with MobileNetV2 pre-trained on ImageNet. The final classification layers 
+were replaced with custom Dense layers to classify ECG images into 4 categories:
+- Normal Heart
+- Myocardial Infarction  
+- Abnormal Heartbeat
+- History of Myocardial Infarction
+
+The model achieved 65% validation accuracy on our dataset of 928 ECG images.
