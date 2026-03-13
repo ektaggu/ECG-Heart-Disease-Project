@@ -62,6 +62,6 @@ This project uses a dataset of annotated ECG images and their corresponding hear
 The original images were resized to 224x224 to make deep learning processing efficient. Images were normalized and augmented using rotation, zoom, and horizontal flip to improve model performance.
 
 ## CNN Architecture (MobileNetV2)
-<img src="mobilenet_architecture.png" width="600"/>
+<img src="The-proposed-MobileNetV2-network-architec....png" width="600"/>
 
 MobileNetV2 is a lightweight deep learning model pre-trained on ImageNet. It uses depthwise separable convolutions for efficient feature extraction. The model was fine-tuned on our ECG dataset for 4-class classification.
