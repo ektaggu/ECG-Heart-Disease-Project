@@ -43,7 +43,8 @@ This project classifies ECG images into 4 heart conditions using Deep Learning (
 7. Prediction
 
 ## An Overview of Electrocardiogram (ECG or EKG)
-![ECG Diagram](downloadECG%20EKG%20DIAGRAM.jpg)
+<img src="downloadECG%20EKG%20DIAGRAM.jpg" width="600"/>
+
 An electrocardiogram records the electrical signals in the heart. It is a common, painless test used to detect heart problems and quickly monitor the heart's health.
 
 It is used to determine or detect:
