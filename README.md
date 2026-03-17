@@ -93,7 +93,7 @@ The primary limitation was the small dataset size (928 images). Despite multiple
 | Our CNN (MobileNetV2) | 928 ECG Images | 65.57% |
 | Reference ViT Model | 928 ECG Images (Same) | 86% |
 
-Both models were trained on the same dataset of 928 ECG images. Despite using identical data, the ViT (Vision Transformer) model achieved 86% accuracy compared to our CNN model's 65.57%. This clearly demonstrates that ViT's self-attention mechanism learns better features from ECG images than standard CNN convolutions.
+Both models were trained on the same dataset of 928 ECG images. Despite using identical data, the ViT (Vision Transformer) model achieved 86% accuracy compared to our CNN model's 65.57%. This clearly demonstrates that ViT's self-attention mechanism learns better features from ECG images than standard CNN convolutions. However, ViT requires 30GB+ RAM, which exceeded our free Google Colab limits — making MobileNetV2 the practical choice for our resource-constrained environment.
 
 ## Future Work
 
