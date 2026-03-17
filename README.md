@@ -79,3 +79,22 @@ were replaced with custom Dense layers to classify ECG images into 4 categories:
 - History of Myocardial Infarction
 
 The model achieved 65% validation accuracy on our dataset of 928 ECG images.
+
+## Challenges & Improvements
+
+During this project, I trained a MobileNetV2 CNN model on ECG images to classify 4 heart conditions. While the model achieved 65.57% validation accuracy, I continuously worked to improve it by increasing epochs from 15 to 30, applying weight decay in the optimizer, and experimenting with the EfficientNetB0 architecture.
+
+The primary limitation was the small dataset size (928 images). Despite multiple optimization attempts, accuracy remained limited — which is expected with such a constrained dataset.
+
+## Model Comparison
+
+| Model | Dataset | Accuracy |
+|-------|---------|----------|
+| Our CNN (MobileNetV2) | 928 ECG Images | 65.57% |
+| Reference ViT Model | 928 ECG Images (Same) | 86% |
+
+Both models were trained on the same dataset of 928 ECG images. Despite using identical data, the ViT (Vision Transformer) model achieved 86% accuracy compared to our CNN model's 65.57%. This clearly demonstrates that ViT's self-attention mechanism learns better features from ECG images than standard CNN convolutions.
+
+## Future Work
+
+As suggested, the next phase of this project will use the PTB-XL ECG Signal Dataset from PhysioNet with a 1D CNN model for arrhythmia classification, which is expected to achieve significantly higher accuracy.
