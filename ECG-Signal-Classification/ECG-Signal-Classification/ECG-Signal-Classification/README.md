@@ -6,6 +6,8 @@ We upgraded to the PTB-XL ECG signal dataset from PhysioNet, which significantly
 Improved our model performance to 85.85% accuracy.
 
 ## Dataset
+Reference: Khan, A.H., Hussain, M., Malik, M.K. (2021)
+ECG Images Dataset of Cardiac
 - **Source:** PTB-XL, PhysioNet (https://physionet.org/content/ptb-xl/1.0.3/)
 - **Total Records:** 21,799 clinical 12-lead ECGs
 - **Used Records:** 15,612
