@@ -2,8 +2,8 @@
 
 ## Overview
 After working on ECG image classification with limited accuracy (65.57%), 
-we upgraded to PTB-XL ECG signal dataset from PhysioNet which significantly 
-improved our model performance to 85.85% accuracy.
+We upgraded to the PTB-XL ECG signal dataset from PhysioNet, which significantly 
+Improved our model performance to 85.85% accuracy.
 
 ## Dataset
 - **Source:** PTB-XL, PhysioNet (https://physionet.org/content/ptb-xl/1.0.3/)
@@ -34,5 +34,5 @@ improved our model performance to 85.85% accuracy.
 | ECG Signal Classification | 15,612 Signals | 1D CNN + LSTM | 85.85% |
 
 ## Improvement
-By switching from image dataset to signal dataset and using 1D CNN + LSTM,
+By switching from an image dataset to a signal dataset and using 1D CNN + LSTM,
 accuracy improved from 65.57% to 85.85% — an improvement of 20.28%!
