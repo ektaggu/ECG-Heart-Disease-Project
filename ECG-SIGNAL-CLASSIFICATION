@@ -5,7 +5,7 @@ After working on ECG image classification with limited accuracy (65.57%),
 We upgraded to the PTB-XL ECG signal dataset from PhysioNet, which significantly 
 Improved our model performance to 85.85% accuracy.
 
-## Dataset
+## SECONDARY-Dataset
 Reference: Khan, A.H., Hussain, M., Malik, M.K. (2021)
 ECG Images Dataset of Cardiac
 - **Source:** PTB-XL, PhysioNet (https://physionet.org/content/ptb-xl/1.0.3/)
