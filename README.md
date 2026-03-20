@@ -93,3 +93,7 @@ Both models were trained on the same dataset of 928 ECG images. Despite using id
 ## Future Work
 
 As suggested, the next phase of this project will use the PTB-XL ECG Signal Dataset from PhysioNet with a 1D CNN model for arrhythmia classification, which is expected to achieve significantly higher accuracy.
+
+## Project 2 — ECG Signal Classification
+After limited accuracy with image classification, we upgraded to the PTB-XL signal dataset.
+Check the full project here: [ECG Signal Classification](ECG-Signal-Classification/README.md)
