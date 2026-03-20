@@ -1,6 +1,6 @@
 # ECG-Heart-Disease-Project (IMAGE)
-ECG image-based heart disease classification Dataset:
-DATASET- Public ECG Image Dataset (Mendeley Data)
+ECG image-based heart disease classification
+DATASET:Public ECG Image Dataset (Mendeley Data)
 https://data.mendeley.com
 Used for validation and comparison
 
