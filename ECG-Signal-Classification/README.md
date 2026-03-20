@@ -21,6 +21,7 @@ Improved our model performance to 85.85% accuracy.
 ## Results
 | Metric | Score |
 |--------|-------|
+| Training Accuracy | 92.07% |
 | Test Accuracy | 85.85% |
 | Test Loss | 0.4278 |
 | NORM F1-Score | 0.93 |
