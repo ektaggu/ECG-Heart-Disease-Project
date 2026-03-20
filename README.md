@@ -77,9 +77,9 @@ The model achieved 65% validation accuracy on our dataset of 928 ECG images.
 
 ## Challenges & Improvements
 
-During this project, I trained a MobileNetV2 CNN model on ECG images to classify 4 heart conditions. While the model achieved 65.57% validation accuracy, I continuously worked to improve it by increasing epochs from 15 to 30, applying weight decay in the optimizer, and experimenting with the EfficientNetB0 architecture.
+During this project, I trained a MobileNetV2 CNN model on ECG images to classify 4 heart conditions. While the model achieved 65.57% validation accuracy, I continued to improve it by increasing the number of epochs from 15 to 30, adding weight decay to the optimizer, and experimenting with the EfficientNetB0 architecture.
 
-The primary limitation was the small dataset size (928 images). Despite multiple optimization attempts, accuracy remained limited — which is expected with such a constrained dataset.
+The primary limitation was the small dataset size (928 images). Despite multiple optimization attempts, accuracy remained limited, which is expected given the constrained dataset.
 
 ## Model Comparison
 
@@ -93,6 +93,11 @@ Both models were trained on the same dataset of 928 ECG images. Despite using id
 ## Future Work
 
 As suggested, the next phase of this project will use the PTB-XL ECG Signal Dataset from PhysioNet with a 1D CNN model for arrhythmia classification, which is expected to achieve significantly higher accuracy.
+
+## References
+- PTB-XL Dataset: Wagner et al. (2022), PhysioNet. https://physionet.org/content/ptb-xl/1.0.3/
+- MobileNetV2: Sandler et al. (2018), Google Research
+- ECG Image Dataset: Khan et al. (2021), Mendeley Data
 
 ## Project 2 — ECG Signal Classification
 After limited accuracy with image classification, we upgraded to the PTB-XL signal dataset.
