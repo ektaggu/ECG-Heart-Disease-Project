@@ -91,8 +91,9 @@ The primary limitation was the small dataset size (928 images). Despite multiple
 Both models were trained on the same dataset of 928 ECG images. Despite using identical data, the ViT (Vision Transformer) model achieved 86% accuracy compared to our CNN model's 65.57%. This clearly demonstrates that ViT's self-attention mechanism learns better features from ECG images than standard CNN convolutions. However, ViT requires 30GB+ RAM, which exceeded our free Google Colab limits — making MobileNetV2 the practical choice for our resource-constrained environment.
 
 ## Future Work
-
-As suggested, the next phase of this project will use the PTB-XL ECG Signal Dataset from PhysioNet with a 1D CNN model for arrhythmia classification, which is expected to achieve significantly higher accuracy.
+The next phase of this project uses the PTB-XL ECG Signal Dataset from PhysioNet 
+with a 1D CNN + LSTM model for arrhythmia classification, achieving 85.65% accuracy.
+See Project 2 below!
 
 ## References
 - PTB-XL Dataset: Wagner et al. (2022), PhysioNet. https://physionet.org/content/ptb-xl/1.0.3/
