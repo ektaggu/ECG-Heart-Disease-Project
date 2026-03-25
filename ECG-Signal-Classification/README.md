@@ -2,8 +2,8 @@
 
 ## Overview
 After working on ECG image classification with limited accuracy (65.57%), 
-We upgraded to the PTB-XL ECG signal dataset from PhysioNet, which significantly 
-Improved our model performance to 85.65% accuracy. After feedback from our project guide, we improved the model by balancing 
+we upgraded to the PTB-XL ECG signal dataset from PhysioNet, which significantly 
+improved our model performance to 85.65% accuracy. After feedback from our project guide, we improved the model by balancing 
 the dataset (690 samples per class) and fine-tuning the architecture, 
 achieving better confusion matrix results.
 
