@@ -21,12 +21,14 @@ Improved our model performance to 85.85% accuracy.
 ## Results
 | Metric | Score |
 |--------|-------|
-| Training Accuracy | 92.07% |
-| Test Accuracy | 85.85% |
-| Test Loss | 0.4278 |
-| NORM F1-Score | 0.93 |
-| IMI F1-Score | 0.77 |
-| ASMI F1-Score | 0.79 |
+| Training Accuracy | 95.69% |
+| Test Accuracy | 85.65% |
+| Test Loss | 0.5257 |
+| NORM F1-Score | 0.83 |
+| IMI F1-Score | 0.84 |
+| ASMI F1-Score | 0.86 |
+| LAFB F1-Score | 0.90 |
+| LVH F1-Score | 0.85 |
 
 ## Project Journey
 | Project | Dataset | Model | Accuracy |
