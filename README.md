@@ -37,6 +37,25 @@ This project classifies ECG images into 4 heart conditions using Deep Learning (
 6. Evaluate Model
 7. Prediction
 
+## Project Flowchart
+```mermaid
+flowchart TD
+    A[Start] --> B[Data Collection\nMendeley ECG Images\n928 Images, 4 Classes]
+    B --> C[Image Preprocessing\nResize 224x224\nNormalize & Augment]
+    C --> D[Train/Val Split\n80/20]
+    D --> E[Build CNN Model\nMobileNetV2 Transfer Learning]
+    E --> F[Train Model\n15-30 Epochs]
+    F --> G[Evaluate Model\n65.57% Accuracy]
+    G --> H{Accuracy Good?}
+    H -->|No| I[Try Improvements\nEfficientNet, Weight Decay]
+    I --> J[Still Limited\nSmall Dataset Problem]
+    J --> K[Switch to Signal Dataset\nPTB-XL 15612 Records]
+    K --> L[1D CNN + LSTM Model\nBalanced Classes]
+    L --> M[Train Model\n21 Epochs]
+    M --> N[85.65% Accuracy\nBetter Confusion Matrix]
+    N --> O[End]
+```
+
 ## An Overview of Electrocardiogram (ECG or EKG)
 <img src="downloadECG%20EKG%20DIAGRAM.jpg" width="600"/>
 
