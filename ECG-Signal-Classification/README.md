@@ -34,7 +34,7 @@ Improved our model performance to 85.85% accuracy.
 | Project | Dataset | Model | Accuracy |
 |---------|---------|-------|----------|
 | ECG Image Classification | 928 Images | MobileNetV2 CNN | 65.57% |
-| ECG Signal Classification | 15,612 Signals | 1D CNN + LSTM | 85.65% |
+| ECG Signal Classification | 3,450 Signals (Balanced) | 1D CNN + LSTM | 85.65% |
 
 ## Improvement
 By switching from an image dataset to a signal dataset and using 1D CNN + LSTM,
