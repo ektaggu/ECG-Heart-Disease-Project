@@ -3,7 +3,9 @@
 ## Overview
 After working on ECG image classification with limited accuracy (65.57%), 
 We upgraded to the PTB-XL ECG signal dataset from PhysioNet, which significantly 
-Improved our model performance to 85.85% accuracy.
+Improved our model performance to 85.65% accuracy. After feedback from our project guide, we improved the model by balancing 
+the dataset (690 samples per class) and fine-tuning the architecture, 
+achieving better confusion matrix results.
 
 ## Dataset
 - **Source:** PTB-XL, PhysioNet (https://physionet.org/content/ptb-xl/1.0.3/)
@@ -12,12 +14,12 @@ Improved our model performance to 85.85% accuracy.
 - **Classes:** NORM, IMI, ASMI, LVH, LAFB
 
 ## Model Architecture
-- 3 x Conv1D layers (64, 128, 256 filters)
+- 4 x Conv1D layers (64, 128, 256, 128 filters)
 - Batch Normalization + MaxPooling
-- LSTM layer (128 units)
-- Dense layers with Dropout
-- SoftMax output (5 classes)
-
+- 2 x LSTM layers (256, 128 units)
+- Dense layers with Dropout (256, 128)
+- Softmax output (5 classes)
+  
 ## Results
 | Metric | Score |
 |--------|-------|
@@ -38,4 +40,4 @@ Improved our model performance to 85.85% accuracy.
 
 ## Improvement
 By switching from an image dataset to a signal dataset and using 1D CNN + LSTM,
-accuracy improved from 65.57% to 85.85% — an improvement of 20.28%!
+accuracy improved from 65.57% to 85.65% — an improvement of 20.28%!
