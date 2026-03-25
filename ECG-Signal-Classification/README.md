@@ -40,4 +40,4 @@ achieving better confusion matrix results.
 
 ## Improvement
 By switching from an image dataset to a signal dataset and using 1D CNN + LSTM,
-accuracy improved from 65.57% to 85.65% — an improvement of 20.28%!
+accuracy improved from 65.57% to 85.65% — an improvement of 20.08%!
