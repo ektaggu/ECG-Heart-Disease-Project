@@ -24,7 +24,7 @@ This project classifies ECG images into four heart conditions using Deep Learnin
 ## ⚙️ Model
 - Architecture: MobileNetV2 (Transfer Learning)  
 - Framework: TensorFlow / Keras  
-- Validation Accuracy: ~65%  
+- Validation Accuracy: ~67%  
 - Fine-Tuning: Last 30 layers were unfrozen to improve performance  
 
 ## 📈 Results
@@ -105,11 +105,11 @@ In this project, transfer learning was applied using MobileNetV2 pre-trained on 
 - Myocardial Infarction (MI)  
 - Abnormal Heartbeat  
 - History of Myocardial Infarction (HMI)  
-The model achieved 65% validation accuracy on our dataset of 928 ECG images.
+The model achieved 67% validation accuracy on our dataset of 928 ECG images.
 
 ## ⚠️ Challenges & Improvements
 
-In this project, a MobileNetV2-based CNN model was trained to classify ECG images into four heart conditions. The model achieved a validation accuracy of 65.57%.
+In this project, a MobileNetV2-based CNN model was trained to classify ECG images into four heart conditions. The model achieved a validation accuracy of 67.21%.
 
 Several improvements were attempted to enhance performance, including increasing the number of training epochs (from 15 to 30), applying weight decay, and experimenting with the EfficientNetB0 architecture.
 
@@ -119,10 +119,10 @@ The primary limitation was the small dataset size (928 images), which restricted
 
 | Model | Dataset | Accuracy |
 |-------|--------|----------|
-| MobileNetV2 (CNN) | 928 ECG Images | 65.57% |
+| MobileNetV2 (CNN) | 928 ECG Images | 67.21% |
 | Vision Transformer (ViT) | 928 ECG Images | 86% |
 
-Both models were trained on the same ECG image dataset. The Vision Transformer (ViT) achieved higher accuracy (86%) compared to the MobileNetV2 model (65.57%), indicating its superior ability to capture complex patterns using self-attention mechanisms.
+Both models were trained on the same ECG image dataset. The Vision Transformer (ViT) achieved higher accuracy (86%) compared to the MobileNetV2 model (67.21%), indicating its superior ability to capture complex patterns using self-attention mechanisms.
 
 However, ViT requires significantly higher computational resources (30GB+ RAM), which exceeds the limitations of free Google Colab environments. Therefore, MobileNetV2 was selected as a practical and efficient solution for resource-constrained settings.
 
