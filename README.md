@@ -90,7 +90,7 @@ Data augmentation techniques such as rotation, width shift, height shift, zoom, 
 ## 🧠 CNN Architecture (MobileNetV2)
 
 <p align="center">
-  <img src="mobilenet.png" width="600"/>
+  <img src="images/mobilenet.png" width="600"/>
 </p>
 
 MobileNetV2 is a lightweight Convolutional Neural Network (CNN) architecture designed for mobile and embedded vision applications. It is a deep learning model pre-trained on the ImageNet dataset and is widely used for efficient feature extraction.
