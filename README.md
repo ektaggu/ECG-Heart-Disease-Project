@@ -1,41 +1,51 @@
-# ECG-Heart-Disease-Project (IMAGE)
-ECG image-based heart disease classification
-DATASET: Public ECG Image Dataset (Mendeley Data)
-https://data.mendeley.com
-Used for validation and comparison
+# ECG Image-Based Heart Disease Classification
 
-## Overview
-This project classifies ECG images into 4 heart conditions using Deep Learning (CNN - MobileNetV2).
+## 📊 Dataset
+- Source: Public ECG Image Dataset (Mendeley Data)  
+- Link: https://data.mendeley.com  
+- Used for validation and comparison
+
+
+## 📌 Overview
+This project classifies ECG images into four heart conditions using Deep Learning techniques. A Convolutional Neural Network (CNN) based on MobileNetV2 with transfer learning is used for multi-class classification.
 
 ## Heart Conditions Detected
-- Normal Heart
-- Myocardial Infarction
+- Normal
+- Myocardial Infarction (MI)
 - Abnormal Heartbeat
-- History of Myocardial Infarction
+- History of Myocardial Infarction (HMI)
 
-## Dataset
-- Total Images: 928
-- Training: 745 images
-- Validation: 183 images
-- Classes: 4
+## 📊 Dataset
+- Total Images: 928  
+- Training Set: 745 images  
+- Validation Set: 183 images  
+- Number of Classes: 4  
 
-## Model
-- Architecture: MobileNetV2 (Transfer Learning)
-- Framework: TensorFlow/Keras
-- Accuracy: 65%
+## ⚙️ Model
+- Architecture: MobileNetV2 (Transfer Learning)  
+- Framework: TensorFlow / Keras  
+- Validation Accuracy: ~65%  
+- Fine-Tuning: Last 30 layers were unfrozen to improve performance  
 
-## Results
+## 📈 Results
+### Training & Validation Performance
 ![Training Graphs](training_graphs.png)
+
+### Training & Validation Performance
 ![Confusion Matrix](confusion_matrix.png)
 
-## Steps
-1. Data Collection
-2. Image Preprocessing
-3. Train/Val Split (80/20)
-4. Build CNN Model
-5. Train Model
-6. Evaluate Model
-7. Prediction
+- Model performance evaluated using Accuracy, Loss, and Confusion Matrix  
+- Classification Report includes Precision, Recall, and F1-score
+
+## 🔄 Project Workflow
+1. Data Collection  
+2. Image Preprocessing (Resizing, Normalization, Data Augmentation)  
+3. Train/Validation Split (80/20)  
+4. Model Building (MobileNetV2 - Transfer Learning)  
+5. Model Training  
+6. Fine-Tuning (Unfreezing last layers)  
+7. Model Evaluation (Accuracy, Loss, Confusion Matrix, Classification Report)  
+8. Prediction  
 
 ## Project Flowchart
 ```mermaid
@@ -57,68 +67,79 @@ flowchart TD
 ```
 
 ## An Overview of Electrocardiogram (ECG or EKG)
-<img src="downloadECG%20EKG%20DIAGRAM.jpg" width="600"/>
+<img src="SinusRhythmLabels.png" width="600"/>
 
-An electrocardiogram records the electrical signals in the heart. It is a common, painless test used to detect heart problems and quickly monitor the heart's health.
+An electrocardiogram (ECG or EKG) records the electrical activity of the heart over time. It is a non-invasive and painless test used to detect heart abnormalities and monitor overall cardiac health.
 
-It is used to determine or detect:
-- Irregular heart rhythms (arrhythmias)
-- Blocked or narrowed arteries causing chest pain or a heart attack
-- Whether you have had a previous heart attack
-- How well certain heart disease treatments are working
+### It is used to detect:
+- Irregular heart rhythms (arrhythmias)  
+- Blocked or narrowed arteries (leading to chest pain or heart attack)  
+- Previous heart attacks  
+- Effectiveness of heart disease treatments
 
-## Identifying Heart Disease from ECG Images with Deep Learning
+## 🧠 Identifying Heart Disease from ECG Images with Deep Learning
 
-This project uses a dataset of annotated ECG images and their corresponding heart disease labels to train a CNN (MobileNetV2) model to identify different heart conditions based on the input ECG image.
+This project utilizes annotated ECG images to train a Convolutional Neural Network (MobileNetV2) for multi-class classification of heart conditions. The model learns to automatically extract meaningful features from ECG images and accurately predict the corresponding heart disease category.
 
-## Data Preprocessing
+## 🧪 Data Preprocessing
 
-The original images were resized to 224x224 to make deep learning processing efficient. Images were normalized and augmented using rotation, zoom, and horizontal flip to improve model performance.
+The input ECG images were resized to 224×224 for compatibility with the MobileNetV2 model. Pixel values were normalized using rescaling (1./255) to improve training stability.
 
-## CNN Architecture (MobileNetV2)
-<img src="mobilenet.png" width="600"/>
+Data augmentation techniques such as rotation, width shift, height shift, zoom, and horizontal flip were applied to enhance model generalization and reduce overfitting.
 
-A lightweight convolutional neural network (CNN) architecture, MobileNetV2, is specifically designed for mobile and embedded vision applications. Google researchers developed it as an enhancement over the original MobileNet model. Another remarkable aspect of this model is its ability to strike a good balance between model size and accuracy, rendering it ideal for resource-constrained devices. And a deep learning model pre-trained on ImageNet. It uses depthwise separable convolutions for efficient feature extraction. The model was fine-tuned on our ECG dataset for 4-class classification.
-The key innovation in MobileNetV2 is the use of inverted residual blocks 
-with linear bottlenecks. Unlike traditional CNNs, it first expands the 
-feature channels, applies depthwise convolution, then compresses back — 
-This reduces computation while preserving accuracy.
+## 🧠 CNN Architecture (MobileNetV2)
 
-For our ECG heart disease classification project, we used Transfer Learning 
-with MobileNetV2 pre-trained on ImageNet. The final classification layers 
-were replaced with custom Dense layers to classify ECG images into 4 categories:
-- Normal Heart
-- Myocardial Infarction  
-- Abnormal Heartbeat
-- History of Myocardial Infarction
+<p align="center">
+  <img src="mobilenet.png" width="600"/>
+</p>
 
+MobileNetV2 is a lightweight Convolutional Neural Network (CNN) architecture designed for mobile and embedded vision applications. It is a deep learning model pre-trained on the ImageNet dataset and is widely used for efficient feature extraction.
+
+The model uses depthwise separable convolutions, which significantly reduce computational cost while maintaining performance. A key innovation of MobileNetV2 is the use of inverted residual blocks with linear bottlenecks. Unlike traditional CNNs, it expands feature channels, applies depthwise convolution, and then compresses them back, improving efficiency without losing accuracy.
+
+In this project, transfer learning was applied using MobileNetV2, and the model was fine-tuned by unfreezing the last 30 layers for improved performance in 4-class heart disease classification.
+
+In this project, transfer learning was applied using MobileNetV2 pre-trained on ImageNet. The final classification layers were replaced with custom Dense layers to classify ECG images into four categories:
+
+- Normal  
+- Myocardial Infarction (MI)  
+- Abnormal Heartbeat  
+- History of Myocardial Infarction (HMI)  
 The model achieved 65% validation accuracy on our dataset of 928 ECG images.
 
-## Challenges & Improvements
+## ⚠️ Challenges & Improvements
 
-During this project, I trained a MobileNetV2 CNN model on ECG images to classify 4 heart conditions. While the model achieved 65.57% validation accuracy, I continued to improve it by increasing the number of epochs from 15 to 30, adding weight decay to the optimizer, and experimenting with the EfficientNetB0 architecture.
+In this project, a MobileNetV2-based CNN model was trained to classify ECG images into four heart conditions. The model achieved a validation accuracy of 65.57%.
 
-The primary limitation was the small dataset size (928 images). Despite multiple optimization attempts, accuracy remained limited, which is expected given the constrained dataset.
+Several improvements were attempted to enhance performance, including increasing the number of training epochs (from 15 to 30), applying weight decay, and experimenting with the EfficientNetB0 architecture.
 
-## Model Comparison
+The primary limitation was the small dataset size (928 images), which restricted the model’s ability to generalize effectively. Despite multiple optimization efforts, accuracy improvements remained limited due to this constraint.
+
+## 📊 Model Comparison
 
 | Model | Dataset | Accuracy |
-|-------|---------|----------|
-| Our CNN (MobileNetV2) | 928 ECG Images | 65.57% |
-| Reference ViT Model | 928 ECG Images (Same) | 86% |
+|-------|--------|----------|
+| MobileNetV2 (CNN) | 928 ECG Images | 65.57% |
+| Vision Transformer (ViT) | 928 ECG Images | 86% |
 
-Both models were trained on the same dataset of 928 ECG images. Despite using identical data, the ViT (Vision Transformer) model achieved 86% accuracy compared to our CNN model's 65.57%. This clearly demonstrates that ViT's self-attention mechanism learns better features from ECG images than standard CNN convolutions. However, ViT requires 30GB+ RAM, which exceeded our free Google Colab limits — making MobileNetV2 the practical choice for our resource-constrained environment.
+Both models were trained on the same ECG image dataset. The Vision Transformer (ViT) achieved higher accuracy (86%) compared to the MobileNetV2 model (65.57%), indicating its superior ability to capture complex patterns using self-attention mechanisms.
 
-## Future Work
-The next phase of this project uses the PTB-XL ECG Signal Dataset from PhysioNet 
-with a 1D CNN + LSTM model for arrhythmia classification, achieving 85.65% accuracy.
-See Project 2 below!
+However, ViT requires significantly higher computational resources (30GB+ RAM), which exceeds the limitations of free Google Colab environments. Therefore, MobileNetV2 was selected as a practical and efficient solution for resource-constrained settings.
 
-## References
-- PTB-XL Dataset: Wagner et al. (2022), PhysioNet. https://physionet.org/content/ptb-xl/1.0.3/
-- MobileNetV2: Sandler et al. (2018), Google Research
-- ECG Image Dataset: Khan et al. (2021), Mendeley Data
+## 🚀 Future Work
+The next phase of this project focuses on ECG signal classification using the PTB-XL dataset from PhysioNet. A 1D CNN + LSTM model is applied for arrhythmia classification, achieving approximately 85.65% accuracy.
 
-## Project 2 — ECG Signal Classification
-After limited accuracy with image classification, we upgraded to the PTB-XL signal dataset.
-Check the full project here: [ECG Signal Classification](ECG-Signal-Classification/README.md)
+---
+
+## 📚 References
+- PTB-XL Dataset: https://physionet.org/content/ptb-xl/1.0.3/  
+- MobileNetV2: Sandler et al. (2018), Google Research  
+- ECG Image Dataset: https://data.mendeley.com  
+
+---
+
+## 🔗 Project 2 — ECG Signal Classification
+After limited accuracy with image-based classification, the project was extended to ECG signal classification using the PTB-XL dataset.
+
+👉 Check the full project here:  
+[ECG Signal Classification](ECG-Signal-Classification/README.md)
