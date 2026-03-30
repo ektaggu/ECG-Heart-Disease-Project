@@ -67,7 +67,7 @@ flowchart TD
 ```
 
 ## An Overview of Electrocardiogram (ECG or EKG)
-<img src="electrocardiogram%20diagram.jpg?raw=true.png" width="600"/>
+<img src="images/electrocardiogram%20diagram.jpg.png" width="600"/>
 
 An electrocardiogram (ECG or EKG) records the electrical activity of the heart over time. It is a non-invasive and painless test used to detect heart abnormalities and monitor overall cardiac health.
 
