@@ -29,7 +29,7 @@ This project classifies ECG images into four heart conditions using Deep Learnin
 
 ## 📈 Results
 ### Training & Validation Performance
-![Training Graphs](training_graphs.png)
+![Training Graphs](images/training_graphs.png)
 
 ### Training & Validation Performance
 ![Confusion Matrix](confusion_matrix.png)
