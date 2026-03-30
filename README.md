@@ -32,7 +32,7 @@ This project classifies ECG images into four heart conditions using Deep Learnin
 ![Training Graphs](images/training_graphs.png)
 
 ### Training & Validation Performance
-![Confusion Matrix](confusion_matrix.png)
+![Confusion Matrix](images/confusion_matrix.pn.png)
 
 - Model performance evaluated using Accuracy, Loss, and Confusion Matrix  
 - Classification Report includes Precision, Recall, and F1-score
