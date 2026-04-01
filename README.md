@@ -125,6 +125,10 @@ classification and applying a 1D CNN + LSTM architecture, the model
 accuracy improved from **67.21%** to **85.65%**, resulting in an
 overall improvement of **18.44%**.
 
+The confusion matrix indicated significant inter-class misclassification,
+especially for History of MI, which highlighted the limitations of
+image-based classification on a small dataset.
+
 ## 📊 Model Comparison
 
 | Model | Dataset | Accuracy |
