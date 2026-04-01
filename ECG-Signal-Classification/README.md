@@ -53,8 +53,8 @@ The model demonstrates strong performance across all five classes, with the high
 | Project | Dataset | Model | Accuracy |
 |---------|---------|-------|----------|
 | ECG Image Classification | 928 Images | MobileNetV2 CNN | 65.57% |
-| ECG Signal Classification | 3,450 balanced signals
-(from 15,612 records) | 1D CNN + LSTM | 85.65% |
+| ECG Signal Classification | 3,450 Balanced Signals (from 15,612 records) | 1D CNN + LSTM | 85.65% |
+
 
 ## 📈 Improvement
 By transitioning from ECG image-based classification to ECG signal-based classification and applying a 1D CNN + LSTM architecture, the model accuracy improved from **65.57%** to **85.65%**, resulting in an overall improvement of **20.08%**.
