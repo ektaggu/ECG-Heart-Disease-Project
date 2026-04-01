@@ -114,6 +114,18 @@ In this project, a MobileNetV2-based CNN model was trained to classify ECG image
 Several improvements were attempted to enhance performance, including increasing the number of training epochs (from 15 to 30), applying weight decay, and experimenting with the EfficientNetB0 architecture.
 
 The primary limitation was the small dataset size (928 images), which restricted the model’s ability to generalize effectively. Despite multiple optimization efforts, accuracy improvements remained limited due to this constraint.
+## 📈 Improvement
+
+Due to the limited prediction performance in ECG image-based classification
+(67.21% validation accuracy), primarily caused by the small dataset size
+and reduced generalization capability, the project was extended to
+signal-based ECG classification using the PTB-XL dataset.
+This significantly improved the overall performance.
+
+By transitioning from ECG image-based classification to ECG signal-based
+classification and applying a 1D CNN + LSTM architecture, the model
+accuracy improved from **67.21%** to **85.65%**, resulting in an
+overall improvement of **18.44%**.
 
 ## 📊 Model Comparison
 
